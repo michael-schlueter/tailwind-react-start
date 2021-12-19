@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const Menu = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div className="h-screen flex justify-center items-center bg-yellow-300">
+      <h1 className="text-9xl uppercase font-black">Menu Page</h1>
+    </div>
+  );
+};
