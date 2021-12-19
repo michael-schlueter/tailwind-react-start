@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = ({ toggle }) => {
   return (
     <nav
       className="flex justify-between items-center h-16 bg-white text-black shadow-sm font-mono"
@@ -10,7 +10,7 @@ export const Navbar = () => {
       <Link to="/" className="pl-8">
         EGG
       </Link>
-      <div className="px-4 cursor-pointer md:hidden">
+      <div className="px-4 cursor-pointer md:hidden" onClick={toggle}>
         <svg
           className="w-8 h-8"
           fill="none"
